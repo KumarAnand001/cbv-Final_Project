@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% extends 'myApp/base.html' %}
+    {% block body_block %}
+        <h1>Beer Details...</h1>
+        <hr>
+        <form action="" method="post">
+            {{form.as_p}}
+            {% csrf_token %}
+            <input type="submit" value="Insert/Update">
+        </form>
+    {% endblock %}
